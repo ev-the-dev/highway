@@ -1,0 +1,29 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "target": "ES6",
+    "paths": {
+      "/opt/nodejs/*": [
+        "layers/base-layer/nodejs/*"
+      ]
+    },
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "allowJs": false,
+    "checkJs": false,
+    "noImplicitAny": true
+  },
+  "include": [
+    "./**/package.json",
+    "src/**/*",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist/**"
+  ]
+}
