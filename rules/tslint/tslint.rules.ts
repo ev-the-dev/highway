@@ -104,4 +104,44 @@ export default {
     },
   ],
   // "@typescript-eslint/method-signature-style": "error" // Take a look at this one on docs
+  "@typescript-eslint/naming-convention": [
+    "error",
+    {
+      selector: "default",
+      format: ["camelCase"],
+    },
+    {
+      selector: "import",
+      format: ["camelCase", "PascalCase"],
+    },
+    {
+      selector: "typeLike",
+      format: ["PascalCase"],
+    },
+    {
+      selector: "memberLike",
+      modifiers: ["private"],
+      format: ["camelCase"],
+      leadingUnderscore: "require",
+    },
+    {
+      selector: "typeAlias",
+      format: ["PascalCase"],
+      suffix: ["Type"],
+    },
+    {
+      selector: "typeParameter",
+      format: ["PascalCase"],
+      prefix: ["T"],
+    },
+    {
+      selector: "interface",
+      format: ["PascalCase"],
+      prefix: ["I"],
+    },
+    {
+      selector: ["enum", "enumMember"],
+      format: ["UPPER_CASE"],
+    },
+  ],
 };
