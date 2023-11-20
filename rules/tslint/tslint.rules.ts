@@ -115,6 +115,12 @@ export default {
       format: ["camelCase", "PascalCase"],
     },
     {
+      selector: "variable",
+      modifiers: ["boolean"],
+      format: ["PascalCase"],
+      prefix: ["is", "has", "should", "can", "did", "will"],
+    },
+    {
       selector: "typeLike",
       format: ["PascalCase"],
     },
