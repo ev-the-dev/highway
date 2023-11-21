@@ -1,7 +1,7 @@
 import { fullConfig } from "./configs";
 
-export default {
-  configs: {
-    full: fullConfig,
-  },
+const configs = {
+  full: fullConfig,
 };
+
+export { configs };

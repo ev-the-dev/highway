@@ -116,7 +116,7 @@ export default {
     },
     {
       selector: "variable",
-      modifiers: ["boolean"],
+      types: ["boolean"],
       format: ["PascalCase"],
       prefix: ["is", "has", "should", "can", "did", "will"],
     },

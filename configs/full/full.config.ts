@@ -3,7 +3,7 @@ import js from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
 // import tslint from "@typescript-eslint"
 import tslintPlugin from "@typescript-eslint/eslint-plugin";
-import tslintParser from "@typescript-eslint/parser";
+import * as tslintParser from "@typescript-eslint/parser";
 import { eslintRules, stylisticRules, tslintRules } from "../../rules";
 
 export default [
