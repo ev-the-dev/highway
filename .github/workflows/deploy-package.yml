@@ -30,7 +30,10 @@ jobs:
 
       - run: npm ci
       - run: npm run compile
-      - run: cd dist/
-      - run: npm publish
+
+      - name: publish dist directory 
+        working-directory: ./dist
+        run: npm publish
+
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
