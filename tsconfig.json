@@ -4,9 +4,10 @@
     "baseUrl": ".",
     "rootDir": ".",
     "outDir": "dist",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "module": "ESNext",
     "target": "ES6",
+    "esModuleInterop": true,
     "paths": {
       "/opt/nodejs/*": [
         "layers/base-layer/nodejs/*"

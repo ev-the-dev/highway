@@ -5,7 +5,7 @@
         "strict": false,
         "strictMode": true,
         "lazy": false,
-        "noInterop": false
+        "noInterop": true
     },
     "jsc": {
         "baseUrl": ".",

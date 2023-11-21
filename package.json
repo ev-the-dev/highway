@@ -14,6 +14,7 @@
     "url": "git+https://github.com/ev-the-dev/highway.git"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
