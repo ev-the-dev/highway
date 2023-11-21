@@ -1,6 +1,6 @@
 {
   "name": "@ev-the-dev/highway",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ESLint Configuration",
   "files": [
     "dist/"
