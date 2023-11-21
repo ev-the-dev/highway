@@ -1,9 +1,12 @@
 name: Create and publish package
 
 # Configures this workflow to run every time a change is pushed to the branch called `release`.
+# on:
+#   push:
+#     branches: ['release/**']
 on:
-  push:
-    branches: ['release/**']
+  release:
+    types: ["published"]
     
 
 # There is a single job in this workflow. It's configured to run on the latest available version of Ubuntu.
@@ -26,6 +29,7 @@ jobs:
           scope: "@ev-the-dev"
 
       - run: npm ci
+      - run: npm run compile
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
