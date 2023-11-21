@@ -1,8 +1,8 @@
 {
   "name": "@ev-the-dev/highway",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ESLint Configuration",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "compile": "npx swc ./rules -d dist/rules/ && npx swc ./configs -d dist/configs/ && npx swc ./index.ts -o dist/index.js && cp package.json dist/package.json && cp package-lock.json dist/package-lock.json"
   },
