@@ -1,9 +1,6 @@
 {
   "extends": "@tsconfig/node18/tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "rootDir": ".",
-    "outDir": "dist",
     "moduleResolution": "nodenext",
     "module": "nodenext",
     "target": "ES6",
@@ -13,14 +10,13 @@
         "layers/base-layer/nodejs/*"
       ]
     },
+    "skipLibCheck": true,
     "noEmit": true,
+    "declaration": true,
+    "declarationMap": true,
     "resolveJsonModule": true,
     "allowJs": false,
     "checkJs": false,
-    "noImplicitAny": true
-  },
-  "exclude": [
-    "node_modules",
-    "dist/**"
-  ]
+    "noImplicitAny": true,
+  }
 }

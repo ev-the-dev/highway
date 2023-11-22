@@ -1,10 +1,10 @@
+// @ts-nocheck
 import globals from "globals";
 import js from "@eslint/js";
-import stylistic from "@stylistic/eslint-plugin";
 // import tslint from "@typescript-eslint"
 import tslintPlugin from "@typescript-eslint/eslint-plugin";
 import * as tslintParser from "@typescript-eslint/parser";
-import { eslintRules, stylisticRules, tslintRules } from "../../rules";
+import { eslintRules, tslintRules } from "../../rules";
 
 export default [
   js.configs.recommended,
@@ -24,12 +24,10 @@ export default [
       },
     },
     plugins: {
-      "@stylistic": stylistic,
       "@typescript-eslint": tslintPlugin,
     },
     rules: {
       ...eslintRules,
-      ...stylisticRules,
       ...tslintRules,
     },
   },
