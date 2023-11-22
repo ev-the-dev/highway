@@ -18,6 +18,9 @@ jobs:
       contents: read
       packages: write
 
+    env:
+      NODE_ENV: "production"
+
     steps:
 
       - uses: actions/checkout@v4
@@ -38,4 +41,3 @@ jobs:
 
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_ENV: "production"

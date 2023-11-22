@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "./lib/cjs",
+    "declarationDir": "./lib/cjs/types",
+    "lib": [
+      "ES6",
+      "DOM"
+    ],
+    "moduleResolution": "Node",
+    "module": "CommonJS",
+    "target": "ES6",
+    "esModuleInterop": true,
+    "noEmit": false,
+    "resolveJsonModule": true,
+    "allowJs": false,
+    "checkJs": false,
+    "noImplicitAny": true,
+    "strict": true
+  }
+}
