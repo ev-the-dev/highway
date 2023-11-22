@@ -26,7 +26,6 @@
     "build:cjs": "npx tsc -p ./tsconfig.cjs.json",
     "build:esm": "npx tsc -p ./tsconfig.esm.json",
     "clean": "rm -rf ./lib",
-    "compile": "",
     "prepack": "npm run build"
   },
   "repository": {
