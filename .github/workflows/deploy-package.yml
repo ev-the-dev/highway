@@ -18,8 +18,6 @@ jobs:
       contents: read
       packages: write
 
-    env:
-      NODE_ENV: "production"
 
     steps:
 
@@ -31,11 +29,10 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: "@ev-the-dev"
 
-      - run: echo $NODE_ENV
       - run: npm ci
 
       - name: publish libs 
         run: npm publish
-
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_ENV: production
