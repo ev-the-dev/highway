@@ -9,7 +9,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "compile": "npx swc ./rules -d dist/rules/ && npx swc ./configs -d dist/configs/ && npx swc ./index.ts -o dist/index.js && cp -r package.json package-lock.json node_modules dist/",
+    "compile": "npx swc ./rules -d dist/rules/ && npx swc ./configs -d dist/configs/ && npx swc ./index.ts -o dist/index.js && cp -r package.json package-lock.json node_modules README.md LICENSE dist/",
     "esbuild": "esbuild ./index.ts --bundle --sourcemap --minify --platform=node --outdir=dist && cp -r package.json package-lock.json dist/"
   },
   "repository": {
@@ -17,8 +17,7 @@
     "url": "git+https://github.com/ev-the-dev/highway.git"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "keywords": [
     "eslint"
