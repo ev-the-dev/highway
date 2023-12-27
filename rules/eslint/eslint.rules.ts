@@ -12,7 +12,7 @@ export default {
   "func-names": ["error", "as-needed"],
   "max-depth": ["error", 2],
   "max-nested-callbacks": ["error", 2],
-  "max-params": "off", // TSLint below
+  "max-params": "off", // TSLint 
   "multiline-comment-style": "warn",
   "no-empty-function": "warn",
   "no-lone-blocks": "error",
@@ -32,7 +32,10 @@ export default {
       ignoreReadBeforeAssign: false,
     },
   ],
-  "sort-imports": "error",
+  "sort-imports": ["error", {
+    ignoreCase: true, // eslint-import-plugin
+    ignoreDeclarationSort: true // eslint-import-plugin
+  }],
   "sort-keys": [
     "error",
     "asc",
@@ -40,4 +43,24 @@ export default {
       natural: true,
     },
   ],
+
+  /**
+   * Import ESLint Rules
+   */
+  "import/order": ["error", {
+    alphabetize: {
+      order: "asc"
+    },
+    groups: [
+      "builtin",
+      "external",
+      "internal",
+      "parent",
+      "sibling",
+      "index",
+      "object",
+      "type"
+    ],
+    "newlines-between": "always"
+  }]
 };
